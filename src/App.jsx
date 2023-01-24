@@ -46,8 +46,8 @@ class App extends React.Component {
     return (
       <div class="main">
         <div id="quote-box">
-        <h2 className="quote">{this.state.quote}</h2>
-        <p className="author">~ {this.state.author}</p>
+        <h2 className="quote" id="text">{this.state.quote}</h2>
+        <p className="author" id="author">~ {this.state.author}</p>
         <div className="action">
         <button
         id="new-quote"
@@ -58,7 +58,7 @@ class App extends React.Component {
         </button>
           <a
             id="tweet-quote"
-            href="https://twitter.com/share"
+            href="twitter.com/intent/tweet"
             target={"_blanks"}
           >
             Tweet
